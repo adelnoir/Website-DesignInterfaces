@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design de Interfaces</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favico.ico">
+    <script src="js/script.js"></script>
 </head>
 <header class="header">
     <img src="img/logo2.png" class="logo">
@@ -12,32 +14,80 @@
 </header>
 <body>
     <div class="container">
-        <div class="grid">
+        <div class="grid" id="gridPaginas">
             <div class="card">
-                <h1>Trabalho 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <h1 class="cardTitle">Design de interfaces</h1>
+                <p class="cardDescription">Introdução aos princípios fundamentais do design de interfaces, abordando o equilíbrio entre estética e funcionalidade, os principais conceitos de usabilidade e os desafios do design para web e mobile.</p>
+                <button class="button" onclick="abrirConteudo(1)">Visualizar Conteúdo</button>
             </div>
             <div class="card">
-                <h1>Trabalho 2</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <h1 class="cardTitle">Composição visual</h1>
+                <p class="cardDescription">Introdução aos princípios da composição visual aplicados ao design de interfaces, explorando alinhamento, equilíbrio, contraste, hierarquia visual, uso de grids e cores</p>
+                <button class="button" onclick="abrirConteudo(2)">Visualizar Conteúdo</button>
             </div>
             <div class="card">
-                <h1>Trabalho 3</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <h1 class="cardTitle">Formatos de imagem</h1>
+                <p class="cardDescription">Introdução aos formatos de imagem digitais aplicados ao design de interfaces, explorando diferenças entre raster e vetorial, modelos de cores RGB e CMYK, técnicas de compressão e recomendações práticas para web e impressão.</p>
+                <button class="button" onclick="abrirConteudo(3)">Visualizar Conteúdo</button>
             </div>
             <div class="card">
-                <h1>Trabalho 4</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <h1 class="cardTitle">Espaços negativos</h1>
+                <p class="cardDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <button class="button" onclick="abrirConteudo(4)">Visualizar Conteúdo</button>
             </div>
             <div class="card">
-                <h1>Trabalho 5</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <h1 class="cardTitle">Tendências visuais</h1>
+                <p class="cardDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <button class="button" onclick="abrirConteudo(5)">Visualizar Conteúdo</button>
             </div>
             <div class="card">
-                <h1>Trabalho 6</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <h1 class="cardTitle">Acessibilidade digital</h1>
+                <p class="cardDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <button class="button" onclick="abrirConteudo(6)">Visualizar Conteúdo</button>
             </div>
         </div>
-            
+        <div class="grid" id="pagina1" style="display: none;">
+            <div class="card">
+                <h1>Conteúdo do Trabalho 1</h1>
+                <p class="cardDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <button class="button" onclick="fecharConteudo()">Voltar</button>
+            </div>
+        </div>
+        <div class="grid" id="pagina2" style="display: none;">
+            <div class="card">
+                <h1>Conteúdo do Trabalho 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <button class="button" onclick="fecharConteudo()">Voltar</button>
+            </div>
+        </div>
+        <div class="grid" id="pagina3" style="display: none;">
+            <div class="card">
+                <h1>Conteúdo do Trabalho 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <button class="button" onclick="fecharConteudo()">Voltar</button>
+            </div>
+        </div>
+        <div class="grid" id="pagina4" style="display: none;">
+            <div class="card">
+                <h1>Conteúdo do Trabalho 4</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <button class="button" onclick="fecharConteudo()">Voltar</button>
+            </div>
+        </div>
+        <div class="grid" id="pagina5" style="display: none;">
+            <div class="card">
+                <h1>Conteúdo do Trabalho 5</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <button class="button" onclick="fecharConteudo()">Voltar</button>
+            </div>
+        </div>
+        <div class="grid" id="pagina6" style="display: none;">
+            <div class="card">
+                <h1>Conteúdo do Trabalho 6</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <button class="button" onclick="fecharConteudo()">Voltar</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
