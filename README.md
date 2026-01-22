@@ -19,9 +19,7 @@ O objetivo é explorar princípios fundamentais de design, composição visual, 
   - Transições e Animações
   - Backdrop Filter
 - **JavaScript (Vanilla)**
-
----
-
+  
 ## Responsividade
 
 O projeto adapta-se automaticamente a:
@@ -32,11 +30,17 @@ O projeto adapta-se automaticamente a:
 
 Media queries garantem reorganização do layout.
 
----
-
 ## Como Executar
 
 1. Clonar o repositório:
 
 ```bash
 git clone https://github.com/adelnoir/Website-DesignInterfaces
+```
+
+## Autor
+
+Leonardo Peixoto
+Curso: Desenvolvimento Web e Dispositivos Móveis
+Unidade Curricular: Design de Interfaces
+
