@@ -286,7 +286,7 @@
                     </p>
                 </div>
 
-                <div class="contrast-example center-screen">
+                <div class="contrast-example">
                     <div class="contrast-container">
                         <div class="contrast-box good-contrast">
                             <h4>Bom Contraste</h4>
@@ -415,7 +415,7 @@
                     </p>
                 </div>
 
-                <img src="img/page3/vetor.jpg" alt="Exemplo de imagem vetorial" class="content-image">
+                <img src="img/page3/vector.png" alt="Exemplo de imagem vetorial" class="content-image">
                 <div class="image-caption">
                     Escalabilidade de uma imagem vetorial sem perda de qualidade
                 </div>
@@ -423,24 +423,33 @@
                 <div class="content-section">
                     <h3>Modelos de Cor</h3>
                     <p>
+                        A escolha entre RGB e CMYK pode ser díficil, por isso, há que saber as diferenças entre cada modelo. RGB oferece uma gama de
+                        cores muito superior, com cores vibrantes e saturadas ideais para ecrãs. CMYK, limitado a quatro cores de tinta, não consegue
+                        reproduzir a mesma intensidade cromática. A conversão entre os dois modelos pode resultar em perda significativa de cor,
+                        especialmente em tons azuis e verdes.
+                    </p>
+
+                    <p>
                         O modelo de cor RGB é utilizado em dispositivos digitais,
                         combinando vermelho, verde e azul para formar diferentes cores.
                         Este modelo é aditivo, o que significa que a combinação total
                         das cores resulta em branco.
-                    </p>
-
-                    <p>
                         Já o modelo CMYK é utilizado principalmente para impressão,
                         baseando-se na combinação de ciano, magenta, amarelo e preto.
                         Este modelo é subtrativo, pois a mistura das cores tende para o preto.
                     </p>
-                    <div class="alignment-columns">
-                        <p id="alignL">CMYK</p>
-                        <p id="alignR">RGB</p>
+                    <div class="color-columns">
+                        <div class="colorL">
+                            <p>CMYK</p>
+                            <img src="img/page3/cmyk.jpg" alt="Cores CMYK">
+                        </div>
+                        <div class="colorR">
+                            <p>RGB</p>
+                            <img src="img/page3/rgb.jpg" alt="Cores RGB">
+                        </div>
                     </div>
                 </div>
 
-                <img src="img/page3/rgb-cmyk.jpg" alt="Modelo de cores RGB e CMYK" class="content-image">
                 <div class="image-caption">
                     Diferença entre modelo de cor RGB e modelo CMYK
                 </div>
@@ -448,22 +457,23 @@
                 <div class="content-section">
                     <h3>Compressão de Imagens</h3>
                     <p>
-                        A compressão de imagens é fundamental para otimizar o desempenho
-                        de uma interface digital. Existem dois principais tipos de compressão,
-                        com perdas e sem perdas.
+                        A compressão de imagens é a técnica de reduzir tamanho de ficheiros mantendo uma qualidade aceitável.
+                        Dois métodos coexistem: compressão com perdas, elimina dados considerados irrelevantes para a visão
+                        humana, enquanto compressão sem perdas utiliza algoritmos que permitem reconstrução exacta. A escolha
+                        depende do equilíbrio desejado entre tamanho e fidelidade visual
                     </p>
 
                     <p>
-                        A compressão com perdas reduz o tamanho do ficheiro eliminando
-                        parte da informação visual, como acontece no formato JPEG.
-                        A compressão sem perdas mantém a qualidade original da imagem,
-                        como no formato PNG.
+                        A compressão com perdas revolucionou a distribuição de imagens na web. Remove dados que o olho humano dificilmente
+                        percebe, o que permite reduções de até 90% no tamanho de ficheiro. No entanto, esta abordagem agressiva deixa
+                        artefatos visíveis em compressões muito elevadas: blocos quadrados, halos ao redor de bordas, e suavização excessiva
+                        de detalhes.
                     </p>
                 </div>
 
-                <img src="img/page3/compressao.jpg" alt="Compressão de imagem" class="content-image">
+                <img src="img/page3/compressao.png" alt="Compressão de imagem" class="content-image" id="imageDog">
                 <div class="image-caption">
-                    Comparação entre compressão com perdas e sem perdas
+                    Compressão com perdas
                 </div>
 
                 <div class="content-section">
@@ -475,15 +485,16 @@
                     </p>
 
                     <p>
-                        A escolha adequada do formato contribui para tempos de carregamento
-                        mais rápidos, melhor experiência do utilizador e maior eficiência
-                        na gestão de recursos digitais.
+                        A seleção do formato correto é determinante para sucesso de qualquer projeto visual. Cada contexto
+                        (web, impressão, animação) exige abordagem específica. Fotógrafos profissionais, designers gráficos e
+                        desenvolvedores web devem dominar estas recomendações para otimizar fluxos de trabalho e resultados
+                        finais.
                     </p>
                 </div>
 
-                <img src="img/page3/web_otimizacao.jpg" alt="Otimização para web" class="content-image">
+                <img src="img/page3/otimizado.png" alt="Otimização para web" class="content-image">
                 <div class="image-caption">
-                    Interface otimizada com imagens adequadas ao contexto digital
+                    Exemplos de imagens otimizadas para web
                 </div>
 
                 <button class="button" onclick="fecharConteudo()">Voltar</button>
@@ -492,19 +503,429 @@
         </div>
 
         <div class="grid" id="pagina4" style="display: none;">
-            <div class="card">
-                <h1>Conteúdo do Trabalho 4</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
-                <button class="button" onclick="fecharConteudo()">Voltar</button>
+        <div class="card">
+
+            <h1 class="cardTitle">Espaços Negativos e Minimalismo</h1>
+
+            <div class="content-section">
+                <p>
+                    O espaço negativo refere-se às áreas vazias entre elementos de design.
+                    No contexto do design de interfaces, corresponde ao espaço em branco
+                    ou vazio em torno de texto, imagens, botões e outros componentes visuais.
+                </p>
+
+                <p>
+                    O uso eficaz de espaços negativos permite destacar elementos importantes,
+                    tornando a informação mais fácil de compreender através do contraste
+                    e da organização visual. Não se trata de espaço desperdiçado, mas sim
+                    de uma ferramenta estratégica para melhorar legibilidade, foco e hierarquia.
+                </p>
+            </div>
+
+            <img src="img/page4/whitespace.jpg" class="content-image" alt="Exemplo de uso de espaço negativo">
+            <div class="image-caption">
+                Exemplo de como a utilização de espaço negativo pode ajudar
+            </div>
+
+            <div class="content-section">
+                <h3>Micro Espaço e Macro Espaço</h3>
+
+                <p>
+                    O espaço negativo pode ser dividido em dois tipos principais:
+                </p>
+
+                <p>
+                    O micro espaço inclui o espaçamento entre letras, linhas de texto
+                    e parágrafos. É essencial para garantir legibilidade e conforto
+                    na leitura.
+                </p>
+
+                <p>
+                    O macro espaço corresponde às margens e áreas vazias entre blocos
+                    de conteúdo e secções maiores da interface. Este tipo de espaço
+                    reduz a carga cognitiva do utilizador e transmite uma sensação
+                    de elegância e profissionalismo.
+                </p>
+                <div class="color-columns">
+                    <div class="colorL">
+                        <p>Micro espaço</p>
+                        <img src="img/page4/micro.jpg" alt="Micro espaço">
+                    </div>
+                    <div class="colorR">
+                        <p>Macro espaço</p>
+                        <img src="img/page4/macro.jpg" alt="Macro espaço">
+                    </div>
+                </div>
+                <div class="image-caption">
+                Diferença entre micro espaço e macro espaço numa interface digital
+                </div>
+
+                <p>
+                Um dos principais benefícios do uso adequado de espaços negativos
+                é a redução da carga cognitiva. Quando uma interface apresenta
+                demasiados elementos visuais em simultâneo, o utilizador necessita
+                de mais esforço mental para processar a informação. O espaço vazio cria pausas visuais que permitem ao cérebro organizar
+                os conteúdos de forma mais eficiente. Esta organização melhora
+                a compreensão, aumenta a velocidade de leitura e reduz a sensação
+                de sobrecarga.
+
+                </p>
+            </div>
+            
+            <div class="content-section">
+                <h3>Princípios do Design Minimalista</h3>
+
+                <p>
+                    O design minimalista baseia-se na filosofia "less is more".
+                    Cada elemento presente na interface deve ter um propósito claro
+                    e justificável.
+                </p>
+
+                <p>
+                    A simplificação sem perda de funcionalidade é alcançada através
+                    da remoção de elementos desnecessários e da utilização de
+                    técnicas como a revelação progressiva, onde opções avançadas
+                    são apresentadas apenas quando o utilizador demonstra necessidade.
+                </p>
+
+                <p>
+                    Interfaces minimalistas bem executadas permitem ao utilizador
+                    focar-se nas tarefas principais sem distrações visuais.
+                </p>
+            </div>
+
+            <img src="img/page4/minimalismo.jpg" class="content-image" alt="Exemplo de design minimalista">
+            <div class="image-caption">
+                Interface minimalista com foco na simplicidade e funcionalidade
+            </div>
+
+        <div class="content-section">
+            <h3>Foco e Direcionamento da Atenção</h3>
+
+            <p>
+                O espaço negativo também funciona como mecanismo de foco. Elementos
+                rodeados por maior quantidade de espaço tendem a ganhar destaque
+                automático.
+            </p>
+
+            <p>
+                Esta técnica é frequentemente utilizada para realçar botões de ação,
+                títulos principais ou mensagens importantes. Ao isolar visualmente
+                um elemento, o designer orienta o percurso visual do utilizador
+                dentro da interface.
+            </p>
+
+            <p>
+                O direcionamento da atenção é essencial para melhorar taxas de
+                conversão e facilitar a execução de tarefas.
+            </p>
+        </div>
+
+        <img src="img/page4/cta.png" class="content-image" alt="Elemento destacado com espaço negativo">
+        <div class="image-caption">
+            Espaço negativo utilizado para destacar um botão de ação
+        </div>
+
+        <div class="content-section">
+            <h3>Minimalismo e Funcionalidade</h3>
+
+            <p>
+                O minimalismo não significa ausência de conteúdo, mas sim
+                a eliminação de elementos supérfluos. Cada componente presente
+                na interface deve cumprir uma função clara.
+            </p>
+
+            <p>
+                A remoção de distrações visuais permite que o utilizador
+                concentre a sua atenção nas tarefas principais. Esta abordagem
+                melhora a eficiência e aumenta a satisfação durante a utilização.
+            </p>
+
+            <p>
+                Contudo, o minimalismo deve ser aplicado com equilíbrio.
+                A simplificação excessiva pode comprometer a compreensão
+                ou remover pistas visuais necessárias à navegação.
+            </p>
+        </div>
+
+        <img src="img/page4/funcionalidade.jpg" class="content-image" alt="Minimalismo equilibrado">
+        <div class="image-caption">
+            Interface minimalista que mantém clareza e funcionalidade
+        </div>
+
+        <div class="content-section">
+            <h3>Coerência visual em diferentes plataformas e dispositivos</h3>
+
+            <p>
+                Cada plataforma tem as suas próprias convenções
+                que devemos respeitar para não frustar os
+                utilizadores.
+            </p>
+
+            <p>
+                A coerência visual não significa criar
+                exatamente a mesma interface em todo o lado,
+                mas sim manter os princípios fundamentais da
+                marca adaptando-os às capacidades e convenções
+                de cada plataforma. No design responsivo, o
+                layout adapta-se ao tamanho do ecrã: no
+                desktop podemos ter uma navegação expandida na
+                horizontal, num tablet teriamos de utilizar um
+                menu e no mobile recorremos à navegação
+                inferior e menus hamburger. No entanto, as
+                cores da marca, a tipografia, o estilos dos
+                ícones e o tom visual mantêm-se reconhecíveis
+                e consistentes.
+            </p>
+
+            <p>
+                A consistência adaptativa significa manter a essência da marca enquanto respeitamos estas
+                expectativas específicas de cada plataforma.
+            </p>
+        </div>
+
+        <img src="img/page4/espacoDispositivos.jpg" class="content-image" id="responsividade"alt="Espaçamento em dispositivos diferentes">
+        <div class="image-caption">
+            Coerência visual adaptada a diferentes dispositivos
+        </div>
+
+        <div class="content-section">
+            <h3>Conclusão</h3>
+
+            <p>
+                O espaço negativo é um elemento estrutural do design de interfaces.
+                A sua utilização adequada contribui para melhorar a legibilidade,
+                reforçar a hierarquia visual, reduzir a carga cognitiva e criar
+                uma experiência mais intuitiva.
+            </p>
+
+            <p>
+                O minimalismo, quando aplicado com critério, potencia estes
+                benefícios ao simplificar a interface sem comprometer a
+                funcionalidade.
+            </p>
+
+            <p>
+                Assim, a gestão consciente do espaço vazio deve ser considerada
+                uma prática fundamental no desenvolvimento de interfaces digitais
+                eficazes e visualmente equilibradas.
+            </p>
+        </div>
+                
+            <button class="button" onclick="fecharConteudo()">Voltar</button>
+
             </div>
         </div>
+
         <div class="grid" id="pagina5" style="display: none;">
-            <div class="card">
-                <h1>Conteúdo do Trabalho 5</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
-                <button class="button" onclick="fecharConteudo()">Voltar</button>
+    <div class="card">
+
+        <h1 class="cardTitle">Tendências Visuais no Design de Interfaces</h1>
+
+        <div class="content-section">
+            <p>
+            As tendências visuais no design de interfaces refletem a evolução tecnológica
+            e estética do meio digital ao longo do tempo. A forma como as interfaces são
+            estruturadas e apresentadas resulta de mudanças progressivas influenciadas
+            por novos recursos técnicos, padrões de interação e preferências visuais.
+            </p>
+
+            <p>
+            O website <a href="https://www.webdesignmuseum.org/" target="_blank">Web Design Museum</a> funciona como um arquivo digital que reúne
+            capturas de ecrã de websites históricos, permitindo observar a evolução
+            das tendências visuais desde os anos 90 até aos anos 2000. A plataforma
+            documenta diferentes estilos, layouts e abordagens gráficas utilizados
+            em várias épocas do design web.
+            </p>
+
+        </div>
+
+        <img src="img/page5/webMuseum.jpg" class="content-image" alt="Tendências visuais em interfaces">
+        <div class="image-caption">
+            Web Design Museum
+        </div>
+
+        <div class="content-section neomorphism-section">
+            <h2>Neomorfismo</h2>
+
+            <p>
+                O neomorfismo é uma tendência visual que combina características do skeuomorfismo
+                com o design minimalista. Caracteriza-se pela criação de elementos que parecem
+                emergir ou estar embutidos na superfície de fundo através da utilização de
+                sombras suaves e iluminação subtil.
+            </p>
+
+            <p>
+                Os componentes apresentam normalmente a mesma cor do fundo, diferenciando-se
+                apenas pelo jogo de luz e sombra. Este efeito cria uma sensação de profundidade
+                discreta e uma aparência suave e moderna.
+            </p>
+
+            <p>
+                Apesar do seu apelo estético, o neomorfismo pode comprometer o contraste
+                entre elementos e fundo, o que levanta questões relacionadas com acessibilidade
+                e legibilidade.
+            </p>
+
+            <div class="neo-card">
+                <strong>Exemplo de Cartão Neomórfico</strong><br>
+                Elemento com sombras suaves que simulam relevo e profundidade.
+            </div>
+
+            <button class="neo-button">Botão Neomórfico</button>
+            <button class="neo-button">Interagir</button>
+        </div>
+
+
+        <!-- GLASSMORPHISM -->
+        <div class="content-section glassmorphism-section">
+            <h2>Glassmorphism</h2>
+
+            <p>
+                O glassmorphism inspira-se na aparência do vidro fosco e caracteriza-se
+                pela utilização de transparências, desfoque de fundo e camadas sobrepostas.
+                Esta abordagem cria uma sensação de profundidade visual e leveza estética.
+            </p>
+
+            <p>
+                A combinação de fundo desfocado com elementos translúcidos permite
+                separar conteúdos mantendo a perceção do contexto visual.
+                Esta tendência tornou-se popular em interfaces modernas,
+                especialmente em sistemas operativos e aplicações móveis.
+            </p>
+
+            <p>
+                No entanto, a aplicação excessiva de efeitos de blur pode afetar
+                o desempenho e a legibilidade, sendo necessário garantir contraste
+                suficiente entre texto e fundo.
+            </p>
+
+            <div class="glass-card">
+                <strong>Exemplo de Cartão com Efeito de Vidro</strong><br>
+                Elemento translúcido com desfoque aplicado ao fundo.
+            </div>
+
+            <button class="glass-button">Botão Glass</button>
+            <button class="glass-button">Explorar</button>
+        </div>
+
+
+        <div class="content-section brutalism-section">
+            <h2>Brutalismo Digital</h2>
+
+            <p>
+                O brutalismo digital caracteriza-se por uma estética crua,
+                direta e intencionalmente não refinada. Esta tendência
+                rompe com convenções tradicionais de harmonia visual,
+                privilegiando impacto e autenticidade.
+            </p>
+
+            <p>
+                São comuns tipografias marcantes, cores fortes,
+                contrastes elevados, layouts pouco convencionais
+                e elementos gráficos aparentemente simples.
+            </p>
+
+            <p>
+                O objetivo não é agradar visualmente segundo padrões
+                clássicos, mas sim provocar reação e destacar a identidade
+                do projeto. No entanto, a aplicação desta abordagem
+                exige equilíbrio para não comprometer a usabilidade.
+            </p>
+
+            <div class="brutal-card">
+                <strong>Exemplo Brutalista</strong><br>
+                Cores intensas, bordas fortes e composição expressiva.
+            </div>
+
+            <button class="brutal-button">Ação</button>
+            <button class="brutal-button">Explorar</button>
+        </div>
+
+
+        <div class="content-section">
+            <h3>Microinterações e Animações</h3>
+
+            <p>
+                As microinterações são pequenas animações que fornecem feedback imediato
+                ao utilizador. Estas interações tornam a experiência mais dinâmica e
+                intuitiva, reforçando a perceção de controlo.
+            </p>
+
+            <p>
+                Quando utilizadas de forma moderada, contribuem para uma interface mais
+                envolvente sem comprometer a performance.
+            </p>
+        </div>
+
+        <!-- RIPPLE EFFECT -->
+        <div class="micro-grid">
+            <div class="demo-content"> 
+                <div class="demo-section">
+                    <h2 class="demo-title">1. Efeito Ripple</h2>
+                    <p class="demo-description">Clique no botão para ver o efeito de onda.</p>
+                    <div class="demo-content">
+                        <button class="ripple-button" onclick="createRipple(event)">
+                            Clique Aqui
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+        
+
+            <!-- SHAKE EFFECT -->
+            <div class="demo-content"> 
+                <div class="demo-section">
+                    <h2 class="demo-title">2. Shake em Erro</h2>
+                    <p class="demo-description">Simula feedback negativo quando uma ação falha.</p>
+                    <div class="demo-content">
+                        <button class="shake-button" onclick="shakeButton(this)">
+                            Tentar Login
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TOGGLE SWITCH -->
+            <div class="demo-content"> 
+                <div class="demo-section">
+                    <h2 class="demo-title">3. Toggle Switch</h2>
+                    <p class="demo-description">Interruptor animado com transição suave.</p>
+                    <div class="demo-content">
+                        <div class="toggle-container">
+                            <span id="toggleText">Desligado</span>
+                            <div class="toggle-switch" onclick="toggleSwitch(this)">
+                                <div class="toggle-slider"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="content-section">
+            <h3>Conclusão</h3>
+
+            <p>
+                As tendências visuais como o neomorfismo, glassmorphism e brutalismo
+                demonstram a diversidade estética no design de interfaces contemporâneo.
+                No entanto, a sua aplicação deve sempre respeitar princípios fundamentais
+                como usabilidade, acessibilidade e clareza visual.
+            </p>
+
+            <p>
+                O equilíbrio entre inovação estética e funcionalidade continua a ser
+                o principal desafio no design de interfaces digitais.
+            </p>
+        </div>
+
+        <button class="button" onclick="fecharConteudo()">Voltar</button>
+
+    </div>
+</div>
+
+        
         <div class="grid" id="pagina6" style="display: none;">
             <div class="card">
                 <h1>Conteúdo do Trabalho 6</h1>
