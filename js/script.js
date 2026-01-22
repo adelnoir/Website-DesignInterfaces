@@ -11,7 +11,7 @@ function fecharConteudo()
     for (let i = 1; i <= 6; i++) {
         document.getElementById("pagina" + i).style.display = 'none';
     }
-}
 
-// Inicializar ao carregar a página
-window.addEventListener('DOMContentLoaded', inicializarModoEscuro);
+document.addEventListener('DOMContentLoaded', function() {
+    abrirConteudo(1);
+});

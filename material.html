@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução - Design de Interfaces</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="icon" type="image/x-icon" href="img/favico.ico">
+    <script src="js/script.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="img/logo2.png" class="logo">
+        <span class="title">Design de Interfaces</span>
+    </header>
+    
+    <div class="sidebar">
+        <a href="index1.html" class="buttonSide">Introdução</a>
+        <a href="material.html" class="buttonSide">Material</a>
+    </div>
+    
+    <div class="container">
+
+        <div class="material-section">
+            <h2>Temas Abordados</h2>
+        </div>
+        
+        <div class="grid" id="gridPaginas">
+            <div class="card">
+                <h1 class="cardTitle">Design de interfaces</h1>
+                <p class="cardDescription">Introdução aos princípios fundamentais do design de interfaces, abordando o equilíbrio entre estética e funcionalidade, os principais conceitos de usabilidade e os desafios do design para web e mobile.</p>
+                <button class="button" onclick="abrirConteudo(1)">Visualizar Conteúdo</button>
+            </div>
+            <div class="card">
+                <h1 class="cardTitle">Composição visual</h1>
+                <p class="cardDescription">Introdução aos princípios da composição visual aplicados ao design de interfaces, explorando alinhamento, equilíbrio, contraste, hierarquia visual, uso de grids e cores</p>
+                <button class="button" onclick="abrirConteudo(2)">Visualizar Conteúdo</button>
+            </div>
+            <div class="card">
+                <h1 class="cardTitle">Formatos de imagem</h1>
+                <p class="cardDescription">Introdução aos formatos de imagem digitais aplicados ao design de interfaces, explorando diferenças entre raster e vetorial, modelos de cores RGB e CMYK, técnicas de compressão e recomendações práticas para web e impressão.</p>
+                <button class="button" onclick="abrirConteudo(3)">Visualizar Conteúdo</button>
+            </div>
+            <div class="card">
+                <h1 class="cardTitle">Espaços negativos</h1>
+                <p class="cardDescription">Aborda o uso do espaço negativo e do design minimalista como ferramentas essenciais para melhorar a legibilidade, criar foco visual e tornar as interfaces mais intuitivas e equilibradas.</p>
+                <button class="button" onclick="abrirConteudo(4)">Visualizar Conteúdo</button>
+            </div>
+            <div class="card">
+                <h1 class="cardTitle">Tendências visuais</h1>
+                <p class="cardDescription">Explora as principais tendências visuais em design de interfaces, analisando como aplicá-las de forma estratégica sem comprometer a usabilidade, a performance e a consistência visual.</p>
+                <button class="button" onclick="abrirConteudo(5)">Visualizar Conteúdo</button>
+            </div>
+            <div class="card">
+                <h1 class="cardTitle">Acessibilidade digital</h1>
+                <p class="cardDescription">Apresenta os fundamentos da acessibilidade digital e das WCAG 2.1, destacando a importância do design inclusivo para garantir igualdade de acesso e uma melhor experiência para todos os utilizadores.</p>
+                <button class="button" onclick="abrirConteudo(6)">Visualizar Conteúdo</button>
+            </div>
+        </div>
+        <div class="grid" id="pagina1" style="display: none;">
+            <div class="card">
+
+                <h1 class="cardTitle">Princípios de Design de Interfaces</h1>
+
+                <div class="content-section">
+                    <p>
+                        O design de interfaces tem como objetivo o equilíbrio entre estética e
+                        funcionalidade, garantindo que a interface seja visualmente apelativa
+                        e, ao mesmo tempo, fácil de utilizar. Uma interface bem projetada
+                        permite que o utilizador interaja com o sistema de forma intuitiva,
+                        sem dificuldades ou confusão.
+                    </p>
+
+                    <p>
+                        Existem diversos princípios no que toca ao design de interfaces,
+                        que devem ser considerados durante o processo de desenvolvimento,
+                        especialmente em projetos para web e dispositivos móveis.
+                    </p>
+                </div>
+
+                <img src="img/page1/hierarquia.jpg" alt="Exemplo de interface digital" class="content-image">
+                <div class="image-caption">
+                    Exemplo de uma interface com boa hierarquia visual
+                </div>
+
+                <div class="content-section">
+                    <h3>Princípios Fundamentais do Design de Interfaces</h3>
+
+                    <p>
+                        Entre os principais princípios do design de interfaces destacam-se
+                        a utilização correta das cores, o espaçamento e o layout, a acessibilidade,
+                        o estudo da audiência, a usabilidade, a tipografia, o design responsivo,
+                        a consistência e o feedback visual.
+                    </p>
+
+                    <p>
+                        O uso de cores deve ser atrativo e representar a identidade da marca,
+                        tendo em conta a psicologia das cores. As cores ajudam a comunicar
+                        informação, criar contraste e orientar o utilizador durante a navegação.
+                    </p>
+                </div>
+
+                <img src="img/page1/cores.webp" alt="Uso das cores no design de interfaces" class="content-image">
+                <div class="image-caption">
+                    Aplicação das cores na interface de acordo com a identidade visual
+                </div>
+
+                <div class="content-section">
+                    <p>
+                        O espaçamento e o layout são essenciais para evitar a desordem visual.
+                        Um espaçamento adequado entre elementos melhora a legibilidade e
+                        facilita a compreensão da informação apresentada na interface.
+                    </p>
+
+                    <p>
+                        A tipografia deve ser legível e apropriada para o contexto, sendo
+                        importante variar o tamanho da fonte para indicar hierarquia visual
+                        e diferenciar títulos, subtítulos e texto principal.
+                    </p>
+                </div>
+
+                <img src="img/page1/tipografia.jpg" alt="Espaçamento e tipografia" class="content-image">
+                <div class="image-caption">
+                    Exemplo de uso correto de tipografia
+                </div>
+
+                <div class="content-section">
+                    <h3>Acessibilidade e Estudo da Audiência</h3>
+
+                    <p>
+                        A acessibilidade é um dos princípios mais importantes do design de interfaces.
+                        A interface deve ser projetada a pensar na inclusão de todos os utilizadores,
+                        garantindo que pessoas com deficiências visuais, motoras ou cognitivas
+                        consigam utilizar o sistema.
+                    </p>
+
+                    <p>
+                        O estudo da audiência permite compreender quem são os utilizadores
+                        e adaptar o design às suas necessidades. Interfaces criadas sem
+                        considerar o público-alvo tendem a apresentar problemas de usabilidade.
+                    </p>
+                </div>
+
+                <img src="img/page1/acessibilidade.jpg" alt="Acessibilidade no design de interfaces" class="content-image">
+                <div class="image-caption">
+                    Interface pensada para acessibilidade e inclusão de utilizadores
+                </div>
+
+                <div class="content-section">
+                    <h3>Estética e Funcionalidade</h3>
+
+                    <p>
+                        A estética está relacionada com o aspeto visual da interface,
+                        incluindo tipografia, cores, ícones, espaçamento e layout.
+                        Estes elementos são importantes para captar a atenção do utilizador
+                        e criar uma experiência visual agradável.
+                    </p>
+
+                    <p>
+                        A funcionalidade está associada à navegação, usabilidade e desempenho.
+                        Uma navegação simples e fluída ajuda o utilizador a encontrar
+                        rapidamente o que precisa, enquanto o desempenho influencia
+                        diretamente a experiência de utilização.
+                    </p>
+
+                    <p>
+                        Um produto com funcionalidade mas sem estética não é cativante,
+                        tal como um produto com estética mas sem funcionalidade não é útil.
+                        Manter o equilíbrio entre estes dois conceitos é fundamental para
+                        o sucesso de um produto digital.
+                    </p>
+                </div>
+
+                <img src="img/page1/responsivo.jpg" alt="Design responsivo" class="content-image">
+                <div class="image-caption">
+                    Interface adaptada a diferentes dispositivos e tamanhos de ecrã
+                </div>
+
+                <div class="content-section">
+                    <h3>Design para Web e Mobile</h3>
+
+                    <p>
+                        O design para web e mobile apresenta desafios e oportunidades.
+                        É necessário garantir consistência entre plataformas, adaptar
+                        componentes visuais a diferentes tamanhos de ecrã e manter
+                        uma boa performance e velocidade de carregamento.
+                    </p>
+
+                    <p>
+                        Interfaces devem ser pensadas para evoluir ao longo do tempo,
+                        recorrendo a componentes reutilizáveis e sistemas de design
+                        que facilitem a manutenção e a escalabilidade do projeto.
+                    </p>
+                </div>
+
+                <button class="button" onclick="fecharConteudo()">Voltar</button>
+
+            </div>
+        </div>
+
+
+
+        <div class="grid" id="pagina2" style="display: none;">
+            <div class="card">
+
+                <h1 class="cardTitle">Princípios de Composição Visual</h1>
+
+                <div class="content-section">
+                    <p>
+                        O processo de composição visual é onde se planeia, ordena e organiza
+                        os elementos visuais de um plano. No design de interfaces, este processo
+                        é essencial para garantir que a informação é apresentada de forma clara,
+                        lógica e visualmente apelativa.
+                    </p>
+
+                    <p>
+                        Desenvolver um olhar crítico permite ao designer compreender quais
+                        decisões fortalecem um projeto e quais podem prejudicar a mensagem
+                        que se pretende transmitir ao utilizador.
+                    </p>
+                </div>
+
+                <img src="img/page2/composicao.jpg" alt="Composição visual de interface" class="content-image">
+                <div class="image-caption">
+                    Exemplo de composição visual organizada e equilibrada
+                </div>
+
+                <div class="content-section">
+                    <h3>Alinhamento</h3>
+                    <p>
+                        O alinhamento é um dos princípios mais importantes da composição visual,
+                        pois garante uma aparência nítida e organizada. Um design bem alinhado
+                        assegura que os elementos possuem uma ligação visual entre si,
+                        criando uma estrutura harmoniosa.
+                    </p>
+
+                    <p>
+                        Ao alinhar corretamente textos, imagens e botões, seja à esquerda,
+                        à direita, ao centro ou justificado, melhora-se a legibilidade,
+                        orienta-se o olhar do utilizador e transmite-se profissionalismo.
+                    </p>
+                    
+                    <div class="alignment-columns">
+                        <p style="text-align: left;">Texto alinhado à esquerda!</p>
+                        <p style="text-align: center;">Texto alinhado ao centro!</p>
+                        <p style="text-align: right;">Texto alinhado à direita!</p>
+                    </div>
+                </div>
+
+
+                <div class="image-caption">
+                    Diferentes tipos de alinhamento aplicados ao layout
+                </div>
+
+                <div class="content-section">
+                    <h3>Equilíbrio</h3>
+                    <p>
+                        O equilíbrio garante estabilidade visual a uma composição, sem que
+                        seja necessário que todos os elementos tenham a mesma dimensão ou peso.
+                        O objetivo é facilitar a perceção do conteúdo e promover uma leitura fluida.
+                    </p>
+
+                    <p>
+                        O equilíbrio simétrico distribui os elementos de forma uniforme,
+                        enquanto o equilíbrio assimétrico utiliza o contraste para criar
+                        harmonia e dinamismo visual.
+                    </p>
+                </div>
+
+                <img src="img/page2/equilibrio.jpg" alt="Equilíbrio visual" class="content-image">
+                <div class="image-caption">
+                    Comparação entre equilíbrio simétrico e assimétrico
+                </div>
+
+                <div class="content-section">
+                    <h3>Contraste</h3>
+                    <p>
+                        O contraste é um princípio fundamental da composição visual,
+                        pois ajuda a destacar os elementos mais importantes da interface.
+                        Este efeito ocorre quando dois elementos se opõem, como claro e escuro,
+                        grande e pequeno ou moderno e tradicional.
+                    </p>
+
+                    <p>
+                        Um contraste bem aplicado direciona a atenção do utilizador para
+                        áreas relevantes do design, facilitando a compreensão da informação.
+                    </p>
+                </div>
+
+                <img src="img/page2/contraste.jpg" alt="Uso de contraste" class="content-image">
+                <div class="image-caption">
+                    Bom e mau uso do contraste em interfaces digitais
+                </div>
+
+                <div class="content-section">
+                    <h3>Uso de Grids e Malhas</h3>
+                    <p>
+                        Os grids são uma ferramenta essencial no design de interfaces,
+                        funcionando como uma estrutura que divide o layout em colunas,
+                        margens e espaços de separação.
+                    </p>
+
+                    <p>
+                        Este sistema promove organização, consistência visual e facilita
+                        a adaptação do layout a diferentes resoluções e dispositivos,
+                        contribuindo também para a acessibilidade.
+                    </p>
+                </div>
+
+                <img src="img/page2/grid.jpg" alt="Sistema de grid" class="content-image">
+                <div class="image-caption">
+                    Exemplo de grid aplicado ao design de interfaces
+                </div>
+
+                <div class="content-section">
+                    <h3>Hierarquia Visual</h3>
+                    <p>
+                        A hierarquia visual desempenha um papel fundamental no design de interfaces,
+                        pois orienta o utilizador sobre onde olhar primeiro e qual o próximo passo
+                        a tomar.
+                    </p>
+
+                    <p>
+                        Uma hierarquia bem construída melhora a experiência do utilizador,
+                        aumenta o envolvimento e reduz a frustração ao navegar numa interface.
+                        Elementos como contraste, espaço nulo, tipografia e padronização
+                        ajudam a criar uma hierarquia clara e eficaz.
+                    </p>
+                </div>
+
+                <img src="img/page2/hierarquia.jpg" alt="Hierarquia visual" class="content-image">
+                <div class="image-caption">
+                    Hierarquia visual aplicada para guiar a atenção do utilizador
+                </div>
+
+                <button class="button" onclick="fecharConteudo()">Voltar</button>
+
+            </div>
+        </div>
+
+        <div class="grid" id="pagina3" style="display: none;">
+            <div class="card">
+                <h1>Conteúdo do Trabalho 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <button class="button" onclick="fecharConteudo()">Voltar</button>
+            </div>
+        </div>
+        <div class="grid" id="pagina4" style="display: none;">
+            <div class="card">
+                <h1>Conteúdo do Trabalho 4</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <button class="button" onclick="fecharConteudo()">Voltar</button>
+            </div>
+        </div>
+        <div class="grid" id="pagina5" style="display: none;">
+            <div class="card">
+                <h1>Conteúdo do Trabalho 5</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <button class="button" onclick="fecharConteudo()">Voltar</button>
+            </div>
+        </div>
+        <div class="grid" id="pagina6" style="display: none;">
+            <div class="card">
+                <h1>Conteúdo do Trabalho 6</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+                <button class="button" onclick="fecharConteudo()">Voltar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
