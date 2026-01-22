@@ -88,7 +88,8 @@ a:link {
   height: 30px;
   width: 225px;
   color: rgb(255, 255, 255);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: #ffffff9f;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -255,7 +256,6 @@ a:link {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 550px;
   gap: 50px;
   width: 100%;
   padding: 20px 0;
@@ -273,8 +273,7 @@ a:link {
 }
 
 .intro-images img {
-  max-width: 700px;
-  width: 100%;
+  max-width: 450px;
   margin-top: 20px;
   margin-bottom: 20px;
   transition: all 0.3s ease;
@@ -327,6 +326,7 @@ a:link {
 }
 
 .content-image {
+  background-color: white;
   width: 100%;
   max-width: 800px;
   margin: 30px auto;
