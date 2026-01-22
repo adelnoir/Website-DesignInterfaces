@@ -11,7 +11,8 @@ function fecharConteudo()
     for (let i = 1; i <= 6; i++) {
         document.getElementById("pagina" + i).style.display = 'none';
     }
+}
 
-document.addEventListener('DOMContentLoaded', function() {
-    abrirConteudo(1);
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     abrirConteudo(2);
+// });

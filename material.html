@@ -244,16 +244,12 @@
                     </p>
                     
                     <div class="alignment-columns">
-                        <p style="text-align: left;">Texto alinhado à esquerda!</p>
-                        <p style="text-align: center;">Texto alinhado ao centro!</p>
-                        <p style="text-align: right;">Texto alinhado à direita!</p>
+                        <p id="alignL">Texto alinhado à esquerda!</p>
+                        <p id="alignC">Texto alinhado ao centro!</p>
+                        <p id="alignR">Texto alinhado à direita!</p>
                     </div>
                 </div>
 
-
-                <div class="image-caption">
-                    Diferentes tipos de alinhamento aplicados ao layout
-                </div>
 
                 <div class="content-section">
                     <h3>Equilíbrio</h3>
@@ -270,7 +266,7 @@
                     </p>
                 </div>
 
-                <img src="img/page2/equilibrio.jpg" alt="Equilíbrio visual" class="content-image">
+                <img src="img/page2/equilibrio.png" alt="Equilíbrio visual" class="content-image">
                 <div class="image-caption">
                     Comparação entre equilíbrio simétrico e assimétrico
                 </div>
@@ -290,9 +286,27 @@
                     </p>
                 </div>
 
-                <img src="img/page2/contraste.jpg" alt="Uso de contraste" class="content-image">
+                <div class="contrast-example center-screen">
+                    <div class="contrast-container">
+                        <div class="contrast-box good-contrast">
+                            <h4>Bom Contraste</h4>
+                            <p>Texto escuro sobre fundo claro</p>
+                            <div class="contrast-demo good">
+                                <span>Texto Legível</span>
+                            </div>
+                        </div>
+                        <div class="contrast-box bad-contrast">
+                            <h4>Mau Contraste</h4>
+                            <p>Texto claro sobre fundo claro</p>
+                            <div class="contrast-demo bad">
+                                <span>Texto Ilegível</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="image-caption">
-                    Bom e mau uso do contraste em interfaces digitais
+                    Bom e mau uso do contraste
                 </div>
 
                 <div class="content-section">
@@ -310,7 +324,7 @@
                     </p>
                 </div>
 
-                <img src="img/page2/grid.jpg" alt="Sistema de grid" class="content-image">
+                <img src="img/page2/grid.webp" alt="Sistema de grid" class="content-image">
                 <div class="image-caption">
                     Exemplo de grid aplicado ao design de interfaces
                 </div>
@@ -331,9 +345,9 @@
                     </p>
                 </div>
 
-                <img src="img/page2/hierarquia.jpg" alt="Hierarquia visual" class="content-image">
+                <img src="img/page2/hierarquiaVisual.png" alt="Hierarquia visual" class="content-image">
                 <div class="image-caption">
-                    Hierarquia visual aplicada para guiar a atenção do utilizador
+                    Exemplo de como a hierarquia visual é interpretada numa interface
                 </div>
 
                 <button class="button" onclick="fecharConteudo()">Voltar</button>
@@ -343,11 +357,140 @@
 
         <div class="grid" id="pagina3" style="display: none;">
             <div class="card">
-                <h1>Conteúdo do Trabalho 3</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates omnis ea, quisquam voluptatibus minima sit recusandae dolores repellendus ducimus perferendis facere. Velit accusamus repudiandae tempore laboriosam minima facilis voluptate!</p>
+
+                <h1 class="cardTitle">Formatos de Imagem no Design de Interfaces</h1>
+
+                <div class="content-section">
+                    <p>
+                        No design de interfaces, a escolha do formato de imagem é um fator
+                        determinante para garantir qualidade visual, desempenho e compatibilidade.
+                        Cada formato possui características próprias que influenciam a forma
+                        como a imagem é armazenada, exibida e processada.
+                    </p>
+
+                    <p>
+                        Compreender as diferenças entre imagens raster e vetoriais, bem como
+                        os modelos de cor e os métodos de compressão, permite ao designer
+                        tomar decisões adequadas consoante o contexto de utilização.
+                    </p>
+                </div>
+
+                <img src="img/page3/rasterVector.webp" alt="Comparação entre raster e vetor" class="content-image">
+                <div class="image-caption">
+                    Diferença entre imagem rasterizada e imagem vetorial
+                </div>
+
+                <div class="content-section">
+                    <h3>Imagens Raster</h3>
+                    <p>
+                        As imagens raster são compostas por píxeis organizados numa grelha.
+                        Cada píxel contém informação de cor, o que permite representar imagens
+                        com grande detalhe, como fotografias.
+                    </p>
+
+                    <p>
+                        No entanto, ao aumentar a dimensão de uma imagem raster, ocorre
+                        perda de qualidade e pixelização. Formatos como JPEG, PNG e WebP
+                        pertencem a esta categoria e são amplamente utilizados na web.
+                    </p>
+                </div>
+
+                <img src="img/page3/raster.png" alt="Exemplo de imagem raster" class="content-image">
+                <div class="image-caption">
+                    Ampliação de imagem raster evidenciando a pixelização
+                </div>
+
+                <div class="content-section">
+                    <h3>Imagens Vetoriais</h3>
+                    <p>
+                        As imagens vetoriais são construídas através de fórmulas matemáticas
+                        que definem linhas, curvas e formas geométricas. Esta característica
+                        permite redimensionar a imagem sem perda de qualidade.
+                    </p>
+
+                    <p>
+                        O formato SVG é o mais utilizado em design de interfaces,
+                        especialmente para logótipos, ícones e elementos gráficos
+                        que necessitam de adaptação a diferentes resoluções.
+                    </p>
+                </div>
+
+                <img src="img/page3/vetor.jpg" alt="Exemplo de imagem vetorial" class="content-image">
+                <div class="image-caption">
+                    Escalabilidade de uma imagem vetorial sem perda de qualidade
+                </div>
+
+                <div class="content-section">
+                    <h3>Modelos de Cor</h3>
+                    <p>
+                        O modelo de cor RGB é utilizado em dispositivos digitais,
+                        combinando vermelho, verde e azul para formar diferentes cores.
+                        Este modelo é aditivo, o que significa que a combinação total
+                        das cores resulta em branco.
+                    </p>
+
+                    <p>
+                        Já o modelo CMYK é utilizado principalmente para impressão,
+                        baseando-se na combinação de ciano, magenta, amarelo e preto.
+                        Este modelo é subtrativo, pois a mistura das cores tende para o preto.
+                    </p>
+                    <div class="alignment-columns">
+                        <p id="alignL">CMYK</p>
+                        <p id="alignR">RGB</p>
+                    </div>
+                </div>
+
+                <img src="img/page3/rgb-cmyk.jpg" alt="Modelo de cores RGB e CMYK" class="content-image">
+                <div class="image-caption">
+                    Diferença entre modelo de cor RGB e modelo CMYK
+                </div>
+
+                <div class="content-section">
+                    <h3>Compressão de Imagens</h3>
+                    <p>
+                        A compressão de imagens é fundamental para otimizar o desempenho
+                        de uma interface digital. Existem dois principais tipos de compressão,
+                        com perdas e sem perdas.
+                    </p>
+
+                    <p>
+                        A compressão com perdas reduz o tamanho do ficheiro eliminando
+                        parte da informação visual, como acontece no formato JPEG.
+                        A compressão sem perdas mantém a qualidade original da imagem,
+                        como no formato PNG.
+                    </p>
+                </div>
+
+                <img src="img/page3/compressao.jpg" alt="Compressão de imagem" class="content-image">
+                <div class="image-caption">
+                    Comparação entre compressão com perdas e sem perdas
+                </div>
+
+                <div class="content-section">
+                    <h3>Recomendações para Web</h3>
+                    <p>
+                        Na web, é essencial equilibrar qualidade visual e desempenho.
+                        Fotografias devem ser guardadas em formatos otimizados como JPEG
+                        ou WebP, enquanto ícones e gráficos simples devem utilizar SVG.
+                    </p>
+
+                    <p>
+                        A escolha adequada do formato contribui para tempos de carregamento
+                        mais rápidos, melhor experiência do utilizador e maior eficiência
+                        na gestão de recursos digitais.
+                    </p>
+                </div>
+
+                <img src="img/page3/web_otimizacao.jpg" alt="Otimização para web" class="content-image">
+                <div class="image-caption">
+                    Interface otimizada com imagens adequadas ao contexto digital
+                </div>
+
                 <button class="button" onclick="fecharConteudo()">Voltar</button>
+
             </div>
         </div>
+
         <div class="grid" id="pagina4" style="display: none;">
             <div class="card">
                 <h1>Conteúdo do Trabalho 4</h1>
