@@ -41,6 +41,8 @@ git clone https://github.com/adelnoir/Website-DesignInterfaces
 ## Autor
 
 Leonardo Peixoto
+
 Curso: Desenvolvimento Web e Dispositivos Móveis
+
 Unidade Curricular: Design de Interfaces
 
